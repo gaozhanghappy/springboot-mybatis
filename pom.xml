@@ -20,6 +20,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -44,14 +49,14 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.32</version>
+			<version>8.0.16</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<!--版本问题一定要注意-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.5</version>
+			<version>1.1.10</version>
 		</dependency>
 
 		<dependency>
@@ -107,7 +112,7 @@
 						<dependency>
 							<groupId>mysql</groupId>
 							<artifactId>mysql-connector-java</artifactId>
-							<version>5.1.32</version>
+							<version>8.0.13</version>
 						</dependency>
 						<dependency>
 							<groupId>tk.mybatis</groupId>

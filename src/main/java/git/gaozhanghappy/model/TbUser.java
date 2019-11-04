@@ -1,23 +1,14 @@
 package git.gaozhanghappy.model;
 
-import java.io.Serializable;
+import lombok.Data;
 
-/**
- * Created by 123456 on 2019/6/2.
- */
-public class TbUser implements Serializable {
+@Data
+public class TbUser {
     private Integer id;
-    private String username;
+
+    private String name;
+
     private String password;
-
-    public TbUser() {
-    }
-
-    public TbUser(Integer id, String username, String password) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-    }
 
     public Integer getId() {
         return id;
@@ -27,12 +18,12 @@ public class TbUser implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPassword() {
@@ -40,15 +31,6 @@ public class TbUser implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "TbUser{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        this.password = password == null ? null : password.trim();
     }
 }

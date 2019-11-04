@@ -2,11 +2,13 @@ server:
   port: 8080
 spring:
   datasource:
-    druid:
-      url: jdbc:mysql://127.0.0.1:3306/springcloud?characterEncoding=utf-8
-      driver-class-name: com.mysql.jdbc.Driver
-      username: root
-      password: 123456
+    url: jdbc:mysql://192.168.81.128:3306/springcloud?characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#日志文件配置
 
 mybatis:
   type-aliases-package: git.gaozhanghappy.model
