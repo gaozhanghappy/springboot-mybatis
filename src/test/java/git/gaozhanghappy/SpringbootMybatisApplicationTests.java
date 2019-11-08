@@ -25,6 +25,7 @@ public class SpringbootMybatisApplicationTests {
 			tbUser.setName("lisi"+i);
 			tbUser.setPassword("1234");
 			tbUserMapper.insert(tbUser);
+			//qiehuanfenzhi
 		}
 		final long end = System.currentTimeMillis();
 		System.out.println((end-start)/1000);
